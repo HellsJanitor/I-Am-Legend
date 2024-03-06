@@ -1,0 +1,123 @@
+<Hells_Janitor>	
+	<!-- new start items -->
+	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']"/>
+	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']"/>
+	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']"/>
+	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ExperienceGain']"/>
+
+	<append xpath="entity_classes/entity_class[@name='playerMale']">
+	<property name="ItemsOnEnterGame.GameModeSurvival" value="Backpack"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="Backpack"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="Backpack"/>
+	<property name="ExperienceGain" value="650"/>
+	</append>
+	
+	<!-- <set xpath="//entity_class[@name='playerMale']//property[contains(@name,'ItemsOnEnterGame')]/@value">drinkJarBoiledWater=2,medicalFirstAidBandage,modGunFlashlight,gunMGT0PipeMachineGun,meleeToolRepairT0StoneAxe,bedrollBlockVariantHelper</set> -->
+	
+	<!-- darkseeker normals -->
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZBoe.prefab</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and (contains(@name,'Feral')) and not (contains(@name,'Crawler'))]//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZBoeFeral.prefab</set>	
+	<set xpath="//entity_class[starts-with(@name,'zombie') and (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZBoeRadiated.prefab</set>
+	
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_HeadGore']/@value">         Boe/Blunt/Head;         Boe/Blade/Head</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_HeadGore']/@data">      target=Neck+scale=0,0,0+atp=true+type=blunt+detach=true+atb=true;      target=Neck+scale=0,0,0+atp=true+type=blade+detach=true+atb=true      </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftUpperLegGore']/@value">       Boe/Blunt/LeftUpperLeg;       Boe/Blade/LeftUpperLeg</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftUpperLegGore']/@data">       target=LeftUpLeg+scale=1,0.5,1+type=blunt+detach=true;       target=LeftUpLeg+scale=1,0.5,1+type=blade+detach=true       </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftLowerLegGore']/@value">       Boe/Blunt/LeftLowerLeg;       Boe/Blade/LeftLowerLeg</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftLowerLegGore']/@data">       target=LeftLeg+scale=0,0,0+atp=true+type=blunt+detach=true;       target=LeftLeg+scale=0,0,0+atp=true+type=blade+detach=true       </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightUpperLegGore']/@value">       Boe/Blunt/RightUpperLeg;       Boe/Blade/RightUpperLeg</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightUpperLegGore']/@data">      target=RightUpLeg+scale=1,0.5,1+type=blunt+detach=true;       target=RightUpLeg+scale=1,0.5,1+type=blade+detach=true       </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightLowerLegGore']/@value">       Boe/Blunt/RightLowerLeg;       Boe/Blade/RightLowerLeg</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightLowerLegGore']/@data">       target=RightLeg+scale=0,0,0+atp=true+type=blunt+detach=true;       target=RightLeg+scale=0,0,0+atp=true+type=blade+detach=true       </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftUpperArmGore']/@value">       Boe/Blunt/LeftUpperArm;       Boe/Blade/LeftUpperArm</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftUpperArmGore']/@data">       target=LeftArmRoll+scale=0.5,1,1+type=blunt+detach=true;       target=LeftArmRoll+scale=0.5,1,1+type=blade+detach=true       </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftLowerArmGore']/@value">       Boe/Blunt/LeftLowerArm;       Boe/Blade/LeftLowerArm</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_LeftLowerArmGore']/@data">       target=LeftForeArmRoll+scale=0,1,1+atp=true+type=blunt+detach=true;       target=LeftForeArmRoll+scale=0,1,1+atp=true+type=blade+detach=true       </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightUpperArmGore']/@value">        Boe/Blunt/RightUpperArm;       Boe/Blade/RightUpperArm</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightUpperArmGore']/@data">       target=RightArmRoll+scale=0.5,1,1+type=blunt+detach=true;       target=RightArmRoll+scale=0.5,1,1+type=blade+detach=true       </set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightLowerArmGore']/@value">       Boe/Blunt/RightLowerArm;       Boe/Blade/RightLowerArm</set>
+	<set xpath="//entity_class[starts-with(@name,'zombie') and not (contains(@name,'Feral')) and not (contains(@name,'Radiated')) and not (contains(@name,'Crawler'))]//property[@name='DismemberTag_L_RightLowerArmGore']/@data">       target=RightForeArmRoll+scale=0,1,1+atp=true+type=blunt+detach=true;       target=RightForeArmRoll+scale=0,1,1+atp=true+type=blade+detach=true       </set>
+	
+	<!-- darkseeker alphas -->
+	<set xpath="//entity_class[@name='zombieBiker']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieBikerFeral']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieBikerRadiated']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightRadiated.prefab</set>
+	<set xpath="//entity_class[@name='zombieLumberjack']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieLumberjackFeral']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieLumberjackRadiated']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightRadiated.prefab</set>
+	<set xpath="//entity_class[@name='zombieFemaleFat']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieFemaleFatFeral']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieFemaleFatRadiated']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightRadiated.prefab</set>
+	<set xpath="//entity_class[@name='zombieFatHawaiian']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieFatHawaiianFeral']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieFatHawaiianRadiated']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightRadiated.prefab</set>
+	<set xpath="//entity_class[@name='zombieWightFeral']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieWightRadiated']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZWightRadiated.prefab</set>
+	
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_HeadGore']/@value">      Wight/Blunt/Head;      Wight/Blade/Head</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_HeadGore']/@data">     target=Neck+scale=0,0,0+atp=true+type=blunt+detach=true+atb=true;     target=Neck+scale=0,0,0+atp=true+type=blade+detach=true+atb=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftUpperLegGore']/@value">     Wight/Blunt/LeftUpperLeg;     Wight/Blade/LeftUpperLeg</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftUpperLegGore']/@data">     target=LeftUpLeg+scale=1,0.5,1+type=blunt+detach=true;     target=LeftUpLeg+scale=1,0.5,1+type=blade+detach=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftLowerLegGore']/@value">     Wight/Blunt/LeftLowerLeg;     Wight/Blade/LeftLowerLeg</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftLowerLegGore']/@data">     target=LeftLeg+scale=0,0,0+atp=true+type=blunt+detach=true;     target=LeftLeg+scale=0,0,0+atp=true+type=blade+detach=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightUpperLegGore']/@value">     Wight/Blunt/RightUpperLeg;     Wight/Blade/RightUpperLeg</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightUpperLegGore']/@data">     target=RightUpLeg+scale=1,0.5,1+type=blunt+detach=true;     target=RightUpLeg+scale=1,0.5,1+type=blade+detach=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightLowerLegGore']/@value">     Wight/Blunt/RightLowerLeg;     Wight/Blade/RightLowerLeg</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightLowerLegGore']/@data">     target=RightLeg+scale=0,0,0+atp=true+type=blunt+detach=true;     target=RightLeg+scale=0,0,0+atp=true+type=blade+detach=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftUpperArmGore']/@value">     Wight/Blunt/LeftUpperArm;     Wight/Blade/LeftUpperArm</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftUpperArmGore']/@data">     target=LeftArmRoll+scale=0,0.8,0.8+atp=true+type=blunt+detach=true;     target=LeftArmRoll+scale=0,0.8,0.8+atp=true+type=blade+detach=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftLowerArmGore']/@value">     Wight/Blunt/LeftLowerArm;     Wight/Blade/LeftLowerArm</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_LeftLowerArmGore']/@data">     target=LeftForeArmRoll+scale=0,1,1+atp=true+type=blunt+detach=true;     target=LeftForeArmRoll+scale=0,1,1+atp=true+type=blade+detach=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightUpperArmGore']/@value">      Wight/Blunt/RightUpperArm;     Wight/Blade/RightUpperArm</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightUpperArmGore']/@data">     target=RightArmRoll+scale=0,0.8,0.8+atp=true+type=blunt+detach=true;     target=RightArmRoll+scale=0,0.8,0.8+atp=true+type=blade+detach=true     </set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightLowerArmGore']/@value">     Wight/Blunt/RightLowerArm;     Wight/Blade/RightLowerArm</set>
+	<set xpath="//entity_class[contains(@name,'zombieBiker') or (contains(@name,'zombieLumberjack')) or (contains(@name,'zombieFemale')) or (contains(@name,'zombieFat')) or (contains(@name,'zombieWight'))]//property[@name='DismemberTag_L_RightLowerArmGore']/@data">     target=RightForeArmRoll+scale=0,1,1+atp=true+type=blunt+detach=true;     target=RightForeArmRoll+scale=0,1,1+atp=true+type=blade+detach=true     </set>
+	
+	<!-- darkseeker spitter -->
+	<set xpath="//entity_class[@name='zombieFatCop']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZSpider.prefab</set>
+	<set xpath="//entity_class[@name='zombieFatCopFeral']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZSpiderFeral.prefab</set>
+	<set xpath="//entity_class[@name='zombieFatCopRadiated']//property[@name='Mesh']/@value">@:Entities/Zombies/Prefabs/ZSpiderRadiated.prefab</set>
+		
+	<!-- remove "special" infected -->
+	<remove xpath="//entity_class[@name='zombieScreamer']"/>
+	<remove xpath="//entity_class[@name='zombieScreamerFeral']"/>
+	<remove xpath="//entity_class[@name='zombieScreamerRadiated']"/>
+	<remove xpath="//entity_class[@name='zombieMutated']"/>
+	<remove xpath="//entity_class[@name='zombieMutatedFeral']"/>
+	<remove xpath="//entity_class[@name='zombieMutatedRadiated']"/>
+	<remove xpath="//entity_class[@name='zombieDemolition']"/>	
+	
+	<!-- zombies always sprint -->
+	<set xpath="//entity_class//property[@name='MoveSpeedAggro'][@value='0.3, 1.35']/@value">1.35, 1.35</set>
+	<set xpath="//entity_class//property[@name='MoveSpeedAggro'][@value='0.6, 1.45']/@value">1.45, 1.45</set>
+	<set xpath="//entity_class//property[@name='MoveSpeedAggro'][@value='.5, 1.35']/@value">1.35, 1.35</set>
+	<set xpath="//entity_class//property[@name='MoveSpeedAggro'][@value='0.2, 1.2']/@value">1.2, 1.2</set>
+	<set xpath="//entity_class//property[@name='MoveSpeedAggro'][@value='0.2, 1.25']/@value">1.25, 1.25</set>
+	<set xpath="//entity_class//property[@name='MoveSpeedAggro'][@value='.5, 1.3']/@value">1.3, 1.3</set>
+	<set xpath="//entity_class//property[@name='MoveSpeedAggro'][@value='0.45, 1.3']/@value">1.3, 1.3</set>
+	
+	<!-- zombie dogs and bears are actually "zombies" -->
+	<insertafter xpath="//entity_class[@name='animalZombieDog']/property[@name='Class']">
+        <property name="EntityType" value="Zombie"/>
+	</insertafter>
+	<insertbefore xpath="//entity_class[@name='animalZombieBear']/property[@name='UserSpawnType']">
+        <property name="EntityType" value="Zombie"/>
+	</insertbefore>
+	
+	<!-- remove physical damage resist -->
+	<remove xpath="//entity_class/effect_group[@name='Base Effects']//passive_effect[@name='PhysicalDamageResist']"/>
+	
+	<!-- reduced harvest counts -->
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='5']/@count">3</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='10']/@count">5</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='12']/@count">6</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='20']/@count">10</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='25']/@count">12</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='30']/@count">15</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='35']/@count">17</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='50']/@count">25</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRawMeat'][@count='100']/@count">50</set>
+	
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRottingFlesh'][@count='10']/@count">5</set>
+	<set xpath="//entity_class//drop[@event='Harvest'][@name='foodRottingFlesh'][@count='50']/@count">25</set>
+</Hells_Janitor>

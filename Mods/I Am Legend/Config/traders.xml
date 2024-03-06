@@ -1,0 +1,12 @@
+<Hells_Janitor>
+	<remove xpath="//trader_item_group[@name='groupArmorMods']//item[@name='modArmorHelmetLight']"/>
+	<remove xpath="//trader_item_group[@name='schematicsModsCommon']//item[@name='modArmorHelmetLightSchematic']"/>
+	<remove xpath="//trader_item_group//item[@name='apparelNightvisionGoggles']"/>
+	
+	<removeattribute xpath="//trader_item_group//item[starts-with(@name,'armor') and (contains(@name,'Helmet'))]/@mods"/>
+	<removeattribute xpath="//trader_item_group//item[starts-with(@name,'armor') and (contains(@name,'Helmet'))]/@mod_chance"/>
+	
+	<set xpath="//trader_item_group//item[@name='gunMGT3M60']/@name">gunMGT2TacticalAR</set>
+	<set xpath="//trader_item_group//item[@name='gunShotgunT3AutoShotgun']/@name">gunShotgunT2PumpShotgun</set>
+	<set xpath="//trader_item_group//item[@name='gunRifleT3SniperRifle']/@name">gunRifleT2LeverActionRifle</set>
+</Hells_Janitor>

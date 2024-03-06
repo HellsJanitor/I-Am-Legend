@@ -1,0 +1,20 @@
+<Hells_Janitor>
+	<remove xpath="//lootgroup[@name='modArmorT1']//item[@name='modArmorHelmetLight']"/>
+	<remove xpath="//lootgroup[@name='schematicsModsAndGeneralT1']//item[@name='modArmorHelmetLightSchematic']"/>
+	<remove xpath="//lootgroup[@name='groupQuestHelmetLightSchematic']"/>
+	
+	<remove xpath="//lootgroup[@name='groupQuestNightVisionGoggles']"/>
+	<remove xpath="//lootgroup//item[@name='apparelNightvisionGoggles']"/>
+	
+	<removeattribute xpath="//lootgroup//item[starts-with(@name,'armor') and (contains(@name,'Helmet'))]/@mods"/>
+	<removeattribute xpath="//lootgroup//item[starts-with(@name,'armor') and (contains(@name,'Helmet'))]/@mod_chance"/>
+	
+	<set xpath="//lootgroup//item[@name='gunMGT3M60']">gunMGT2TacticalAR</set>
+	<set xpath="//lootgroup//item[@name='gunShotgunT3AutoShotgun']">gunShotgunT2PumpShotgun</set>
+	<set xpath="//lootgroup//item[@name='gunRifleT3SniperRifle']">gunRifleT2LeverActionRifle</set>
+	
+	<remove xpath="//lootgroup[@name='groupDewCollectorLoot03']//item[@name='resourceWaterFilter']"/>
+	<append xpath="//lootgroup[@name='groupDewCollectorLoot01']">
+	<item name="resourceWaterFilter" loot_prob_template="high"/>
+	</append>
+</Hells_Janitor>

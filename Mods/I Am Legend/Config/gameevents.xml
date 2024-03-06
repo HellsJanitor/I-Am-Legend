@@ -1,0 +1,89 @@
+<Hells_Janitor>
+	<append xpath="//action_sequence[@name='game_first_spawn']">
+		<action class="Delay">
+			<property name="time" value="2"/>
+			<property name="phase" value="4"/>
+		</action>
+		
+		<action class="AddJournalTip">
+			<property name="tip_name" value="IAmLegendTip02"/>
+			<property name="show_window" value="true"/>
+			<property name="phase" value="7"/>
+		</action>
+	</append>
+	<append xpath="/gameevents">
+		<action_sequence name="action_kill_nightspawns">
+			<property name="action_type" value="Game"/>
+			<property name="allow_user_trigger" value="true"/>
+			<requirement class="NearbyEntities">
+				<property name="max_distance" value="300"/>
+			</requirement>
+			<action class="AddEntitiesToGroup">
+				<property name="phase" value="0"/>
+				<property name="group_name" value="nightspawns"/>
+				<property name="entity_tags" value="zombie"/>
+				<property name="max_distance" value="300"/>
+				<property name="target_only" value="false"/>
+			</action>
+			<action class="Kill">
+				<property name="phase" value="2"/>
+				<property name="target_group" value="nightspawns"/>
+			</action>
+		</action_sequence>
+		<action_sequence name="nightspawn_horde_sequence">
+			<property name="action_type" value="Game"/>
+			<property name="allow_user_trigger" value="true"/>
+			<action class="SpawnEntity">
+				<property name="entity_group" value="SleeperGSList"/>
+				<property name="spawn_count" value="8"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="30"/>
+				<property name="max_distance" value="50"/>
+				<property name="spawn_type" value="WanderingHorde"/>
+			</action>
+			<action class="SpawnEntity">
+				<property name="entity_group" value="SleeperGSList"/>
+				<property name="spawn_count" value="8"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="30"/>
+				<property name="max_distance" value="50"/>
+				<property name="spawn_type" value="WanderingHorde"/>
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE"/>
+					<property name="game_stage" value="50"/>
+				</requirement>
+			</action>
+			<action class="SpawnEntity">
+				<property name="entity_group" value="SleeperGSList"/>
+				<property name="spawn_count" value="8"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="30"/>
+				<property name="max_distance" value="50"/>
+				<property name="spawn_type" value="WanderingHorde"/>
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE"/>
+					<property name="game_stage" value="100"/>
+				</requirement>
+			</action>
+			<action class="AddEntitiesToGroup">
+				<property name="phase" value="0"/>
+				<property name="group_name" value="zombies"/>
+				<property name="max_distance" value="50"/>
+			</action>
+			<!-- <action class="PlaySound">
+			<property name="sound" value="twitch_bloodmoon_today" />
+		</action> -->
+			<!-- <action class="RageZombies">
+			<property name="time" value="5" />
+			<property name="speed_percent" value=".10" />
+			<property name="target_group" value="zombies" />
+		</action> -->
+		</action_sequence>
+	</append>
+</Hells_Janitor>
