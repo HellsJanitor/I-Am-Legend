@@ -14,6 +14,12 @@ Every single person that you or I has ever known is dead! DEAD!
 
 THERE IS NO GOD!
 
+>[!TIP]
+>The download .zip file contains a folder called `\Mods`. You can either:
+>1. Copy this folder into your game directory, usually `C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die`
+>2. Copy the folder into `%AppData%\Roaming\7DaysToDie`
+>3. Alternatively, you can use the mod launcher, available from here: [https://7d2dmodlauncher.org/](url)
+
 ## ABOUT THE 'I AM LEGEND' MOD.
 Zombies (Dark Seekers) DO NOT spawn in the wild during the day. You are free to move about the world, but be warned...
 
