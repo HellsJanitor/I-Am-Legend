@@ -55,7 +55,7 @@ Also thanks to Frantic_Dan and redbeardt for base xml code for HUD changes, and 
             <Version>Latest</Version>
             <DownloadMode>Clone</DownloadMode>
             <Downloads>
-                <Download></Download>
+                <Download>https://github.com/HellsJanitor/I-Am-Legend</Download>
             </Downloads>
         </Server>
     </ServerGroup>
