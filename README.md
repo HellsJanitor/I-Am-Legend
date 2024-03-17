@@ -3,6 +3,12 @@
  
 ### A small mod that tries to emulate the movie of the same name.
 
+>[!NOTE]
+>
+>## Changelog/updates for v 1.0.1
+>
+>The loot probability for books and magazines is now tied to the MAGAZINE for that tool or weapon. The more magazines you read, the better chance of finding books or magazines for that tool or weapon.	
+
 ## SYNOPSIS:
 Six billion people on Earth when the infection hit...
 
