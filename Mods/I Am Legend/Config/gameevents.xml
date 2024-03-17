@@ -16,17 +16,23 @@
 			<property name="action_type" value="Game"/>
 			<property name="allow_user_trigger" value="true"/>
 			<requirement class="NearbyEntities">
-				<property name="max_distance" value="300"/>
+				<property name="max_distance" value="6000"/>
 			</requirement>
+			<action class="AddSpawnedEntitiesToGroup">
+				<property name="phase" value="0"/>
+				<property name="group_name" value="nightspawns"/>
+				<property name="entity_tags" value="zombie"/>
+				<property name="target_only" value="false"/>
+			</action>
 			<action class="AddEntitiesToGroup">
 				<property name="phase" value="0"/>
 				<property name="group_name" value="nightspawns"/>
 				<property name="entity_tags" value="zombie"/>
-				<property name="max_distance" value="300"/>
+				<property name="max_distance" value="6000"/>
 				<property name="target_only" value="false"/>
 			</action>
 			<action class="Kill">
-				<property name="phase" value="2"/>
+				<property name="phase" value="1"/>
 				<property name="target_group" value="nightspawns"/>
 			</action>
 		</action_sequence>
