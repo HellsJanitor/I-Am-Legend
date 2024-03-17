@@ -1280,6 +1280,11 @@
 	<remove xpath="/progression/perks/perk[@name='perkElectrocutioner']"/>
 	<!-- remove perkSalvageOperations -->
 	<remove xpath="/progression/perks/perk[@name='perkSalvageOperations']"/>
+	<!-- remove perkDaringAdventurer -->
+	<remove xpath="/progression/perks/perk[@name='perkDaringAdventurer']"/>
+	<!-- remove perkBetterBarter -->
+	<remove xpath="/progression/perks/perk[@name='perkBetterBarter']"/>
+	
 		
 	<!-- add stamina loss bonus to "flurry of ..." perks -->
 	<set xpath="//perk[@name='perkFlurryOfPerception']/level_requirements[@level='1']/requirement[@name='ProgressionLevel']/@value">3</set>
