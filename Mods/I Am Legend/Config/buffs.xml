@@ -49,4 +49,10 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 		</effect_group>
 	</append>
+	<!-- *** newbie coat removed at level 1 *** -->
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate']/requirement[@name='PlayerLevel']/@value">0</set>
+	<set xpath="/buffs/buff[@name='buffNearDeathRegen']/effect_group/triggered_effect[@action='RemoveAllNegativeBuffs']/requirement[@name='PlayerLevel']/@value">1</set>
+	<set xpath="/buffs/buff[@name='buffNearDeathRegen']/effect_group/triggered_effect[@action='RemoveBuff']/requirement[@name='PlayerLevel']/@value">1</set>
+	<remove xpath="/buffs/buff[@name='buffNearDeathRegen']/effect_group/passive_effect[@name='HealthChangeOT']"/> <!-- You may want this too?? -->
+	<remove xpath="/buffs/buff[@name='buffNearDeathProtection']/effect_group/passive_effect[@name='BuffResistance']"/> <!-- Removes invisible buff section that gives resistance to negative buffs -->
 </Hells_Janitor>
