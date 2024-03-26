@@ -27,7 +27,7 @@ lbu_ArcheryDesc,progression,Perk,,,"Learn by Use: [Agility] Use any Bow to upgra
 lbu_GunslingerName,progression,Perk,,,"Gunslinger Skills"
 lbu_GunslingerDesc,progression,Perk,,,"Learn by Use: [Agility] Use any Handgun or SMG to upgrade the Gunslinger skill points. Increases are applied cumulatively per Level."
 lbu_DeepCutsName,progression,Perk,,,"Deep Cuts Skills"
-lbu_DeepCutsDesc,progression,Perk,,,"Learn by Use: [Agility] Use any Bladed Weapon to upgrade the DeapCuts skill points. Increases are applied cumulatively per Level. Killing blows grant from 1 to 30 stamina over levels 1-100. There are 2 StaminaLoss values shown below - the second one is for Power Attacks."
+lbu_DeepCutsDesc,progression,Perk,,,"Learn by Use: [Agility] Use any Bladed Weapon to upgrade the DeepCuts skill points. Increases are applied cumulatively per Level. Killing blows grant from 1 to 30 stamina over levels 1-100. There are 2 StaminaLoss values shown below - the second one is for Power Attacks."
 lbu_ElectrocutionerName,progression,Perk,,,"Electrocutioner Skills"
 lbu_ElectrocutionerDesc,progression,Perk,,,"Learn by Use: [Intellect] Use any Baton to upgrade the Electrocutioner skill points. Increases are applied cumulatively per Level. Killing blows grant from 1 to 30 stamina over levels 1-100. There are 2 StaminaLoss values shown below - the second one is for Power Attacks."
 lbu_RoboticsName,progression,Perk,,,"Robotics Skills"

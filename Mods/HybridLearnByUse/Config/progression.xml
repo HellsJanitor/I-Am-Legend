@@ -597,7 +597,7 @@
 				<requirement name="ItemHasTags" tags="perkMiner69r,perkMotherLode"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="0.01,1.5" level="1,100"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0.01,0.50" level="1,100"/>
-				<passive_effect name="HarvestCount" operation="perc_add" value="0.01,1" level="1,100"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value="0.01,1" level="1,100" tags="oreWoodHarvest"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,100" tags="primary"/>/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.50" level="1,100" tags="secondary"/>
 			</effect_group>
